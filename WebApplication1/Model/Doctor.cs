@@ -1,11 +1,11 @@
 namespace WebApplication1.Model;
 
-public class Patient
+public class Doctor
 {
-    public int IdPatient { get; set; }
+    public int IdDoctor { get; set; }
     public string FirstName { get; set; } // nvarchar(100)
     public string LastName { get; set; }  // nvarchar(100)
-    public DateTime Birthdate { get; set; }
+    public string Email { get; set; }     // nvarchar(100)
 
     public virtual ICollection<Prescription> Prescriptions { get; set; }
 }
